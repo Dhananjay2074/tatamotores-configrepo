@@ -1,12 +1,13 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/inventorymgmtdb
-    username: root
-    password: Prokarma@123
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/inventorymgmtdb
+    username: postgres
+    password: welcome1
   jpa:
     generate-ddl: false
     show-sql: true
+    database: org.hibernate.dialect.PostgreSQLDialect
 stock:
   transportType: air
   slaDays: 2
